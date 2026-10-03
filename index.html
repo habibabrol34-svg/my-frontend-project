@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>16.08.2025 ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         SCENE 1
+    ========================== -->
+
+    <section class="scene active" id="scene1">
+
+        <div class="intro">
+
+            <div class="tiny">
+                A SPECIAL DAY
+            </div>
+
+            <h1>16.08.2025</h1>
+
+            <p>
+                Some dates are just dates...
+                <br>
+                and some become memories forever.
+            </p>
+
+            <button onclick="showScene(2)">
+                START OUR STORY ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCENE 2
+         PHOTOS + ARROWS
+    ========================== -->
+
+    <section class="scene" id="scene2">
+
+        <div class="memory-section">
+
+            <div class="tiny">
+                OUR MEMORIES
+            </div>
+
+            <h2>
+                Little moments,
+                <br>
+                big memories.
+            </h2>
+
+            <div class="memory-area">
+
+                <div class="photo p1">
+                    <img src="5767248412985200494_121.jpg" alt="Our memory">
+                    <span>Memory 01</span>
+                </div>
+
+                <div class="photo p2">
+                    <img src="5767248412985200498_121.jpg" alt="Our memory">
+                    <span>Memory 02</span>
+                </div>
+
+                <div class="photo p3">
+                    <img src="5767248412985200438_121.jpg" alt="Our memory">
+                    <span>Memory 03</span>
+                </div>
+
+                <div class="photo p4">
+                    <img src="5767248412985200484_121.jpg" alt="Our memory">
+                    <span>Memory 04</span>
+                </div>
+
+                <div class="photo p5">
+                    <img src="5767248412985200455_121.jpg" alt="Our memory">
+                    <span>Memory 05</span>
+                </div>
+
+                <div class="photo p6">
+                    <img src="5767248412985200462_121.jpg" alt="Our memory">
+                    <span>Memory 06</span>
+                </div>
+
+
+                <!-- LINES -->
+
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+                <div class="line line4"></div>
+                <div class="line line5"></div>
+                <div class="line line6"></div>
+
+
+                <!-- ARROWS -->
+
+                <div class="arrow a1">➜</div>
+                <div class="arrow a2">➜</div>
+                <div class="arrow a3">➜</div>
+                <div class="arrow a4">➜</div>
+                <div class="arrow a5">➜</div>
+                <div class="arrow a6">➜</div>
+
+
+                <!-- CENTER -->
+
+                <div class="center-dot">
+                    ❤️
+                </div>
+
+            </div>
+
+
+            <button onclick="showScene(3)">
+                NEXT MEMORY →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCENE 3
+         VIDEO
+    ========================== -->
+
+    <section class="scene" id="scene3">
+
+        <div class="video-section">
+
+            <div class="tiny">
+                OUR VIDEO
+            </div>
+
+            <h2>
+                A moment
+                <br>
+                captured forever.
+            </h2>
+
+            <div class="video-box">
+
+                <video controls>
+
+                    <source src="video.mp4" type="video/mp4">
+
+                    Your browser does not support video.
+
+                </video>
+
+            </div>
+
+            <button onclick="showScene(4)">
+                NEXT →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCENE 4
+         MUSIC
+    ========================== -->
+
+    <section class="scene" id="scene4">
+
+        <div class="music-section">
+
+            <div class="tiny">
+                OUR SONG
+            </div>
+
+            <h2>
+                This song
+                <br>
+                reminds me of you. 🎵
+            </h2>
+
+
+            <div class="music-player">
+
+                <div class="vinyl" id="vinyl">
+
+                    <div class="vinyl-center">
+                        ❤️
+                    </div>
+
+                </div>
+
+                <div class="music-info">
+
+                    <h3>
+                        كلمة — Kelma
+                    </h3>
+
+                    <p>
+                        "قولي ألاقي أنا زيك فين... ده أنا عايش ليك" ❤️
+                    </p>
+
+
+                    <!-- تم ربط اسم ملف الأغنية هنا -->
+
+                    <audio
+                        id="music"
+                        controls
+                    >
+
+                        <source
+                            src="04.Kelma.mp3"
+                            type="audio/mpeg"
+                        >
+
+                    </audio>
+
+                </div>
+
+            </div>
+
+
+            <button onclick="showScene(5)">
+                NEXT →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCENE 5
+         LETTER
+    ========================== -->
+
+    <section class="scene" id="scene5">
+
+        <div class="letter-section">
+
+            <div class="tiny">
+                ONE LAST THING
+            </div>
+
+            <h2>
+                A little message
+                <br>
+                for you. 💌
+            </h2>
+
+
+            <div
+                class="envelope"
+                id="envelope"
+                onclick="openLetter()"
+            >
+
+                <div class="letter">
+
+                    <h3>
+                        To My Love ❤️
+                    </h3>
+
+                    <p>
+                        كلمة توديك أو كلمة تجيبك...
+                        <br>
+                        مين اللي قالك إني هسيبك؟
+                        <br><br>
+                        قولي ألاقي أنا زيك فين؟
+                        ياللي مفيش في جمالك اتنين...
+                        <br><br>
+                        16.08.2025
+                    </p>
+
+                </div>
+
+                <div class="flap"></div>
+
+                <div class="seal">
+                    ♥
+                </div>
+
+            </div>
+
+
+            <p class="hint">
+                Click the envelope
+            </p>
+
+
+            <button onclick="showScene(6)">
+                ONE LAST SURPRISE ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCENE 6
+         HEART
+    ========================== -->
+
+    <section class="scene final" id="scene6">
+
+        <canvas id="heartCanvas"></canvas>
+
+        <div
+            class="final-text"
+            id="finalText"
+        >
+
+            <div class="tiny">
+                OUR STORY
+            </div>
+
+            <h2>
+                Every path
+                <br>
+                leads to you.
+            </h2>
+
+            <p>
+                16 • 08 • 2025
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
